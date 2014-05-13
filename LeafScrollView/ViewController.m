@@ -18,8 +18,16 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    LeafScrollView *leaf = [[LeafScrollView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:leaf];
+    leaf.beginUpdatingBlock = ^(LeafScrollView *view){
+        [self performSelector:@selector(endUpdating:) withObject:view afterDelay:2];
+    };
+    
 }
-
+-(void)endUpdating:(LeafScrollView *)view{
+    [view endUpdating];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

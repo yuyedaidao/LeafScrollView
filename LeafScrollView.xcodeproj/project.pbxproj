@@ -22,6 +22,10 @@
 		21A454661920C54000B8F491 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A454451920C54000B8F491 /* UIKit.framework */; };
 		21A4546E1920C54000B8F491 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21A4546C1920C54000B8F491 /* InfoPlist.strings */; };
 		21A454701920C54000B8F491 /* LeafScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A4546F1920C54000B8F491 /* LeafScrollViewTests.m */; };
+		21A4547D1920CC7D00B8F491 /* LeafScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A4547C1920CC7D00B8F491 /* LeafScrollView.m */; };
+		21A454811920D64400B8F491 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21A454801920D64400B8F491 /* bg.jpg */; };
+		21A454841920EA9400B8F491 /* refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 21A454821920EA9400B8F491 /* refresh.png */; };
+		21A454851920EA9400B8F491 /* refresh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21A454831920EA9400B8F491 /* refresh@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,11 @@
 		21A4546B1920C54000B8F491 /* LeafScrollViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LeafScrollViewTests-Info.plist"; sourceTree = "<group>"; };
 		21A4546D1920C54000B8F491 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		21A4546F1920C54000B8F491 /* LeafScrollViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeafScrollViewTests.m; sourceTree = "<group>"; };
+		21A4547B1920CC7D00B8F491 /* LeafScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeafScrollView.h; sourceTree = "<group>"; };
+		21A4547C1920CC7D00B8F491 /* LeafScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeafScrollView.m; sourceTree = "<group>"; };
+		21A454801920D64400B8F491 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
+		21A454821920EA9400B8F491 /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh.png; sourceTree = "<group>"; };
+		21A454831920EA9400B8F491 /* refresh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "refresh@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +123,7 @@
 		21A454471920C54000B8F491 /* LeafScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				21A4547A1920CC6600B8F491 /* LeafScrollView */,
 				21A454501920C54000B8F491 /* AppDelegate.h */,
 				21A454511920C54000B8F491 /* AppDelegate.m */,
 				21A454531920C54000B8F491 /* Main_iPhone.storyboard */,
@@ -153,6 +163,18 @@
 				21A4546C1920C54000B8F491 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		21A4547A1920CC6600B8F491 /* LeafScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				21A454821920EA9400B8F491 /* refresh.png */,
+				21A454831920EA9400B8F491 /* refresh@2x.png */,
+				21A454801920D64400B8F491 /* bg.jpg */,
+				21A4547B1920CC7D00B8F491 /* LeafScrollView.h */,
+				21A4547C1920CC7D00B8F491 /* LeafScrollView.m */,
+			);
+			path = LeafScrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +254,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				21A454581920C54000B8F491 /* Main_iPad.storyboard in Resources */,
+				21A454851920EA9400B8F491 /* refresh@2x.png in Resources */,
 				21A4545D1920C54000B8F491 /* Images.xcassets in Resources */,
+				21A454841920EA9400B8F491 /* refresh.png in Resources */,
 				21A454551920C54000B8F491 /* Main_iPhone.storyboard in Resources */,
+				21A454811920D64400B8F491 /* bg.jpg in Resources */,
 				21A4544C1920C54000B8F491 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21A4545B1920C54000B8F491 /* ViewController.m in Sources */,
+				21A4547D1920CC7D00B8F491 /* LeafScrollView.m in Sources */,
 				21A454521920C54000B8F491 /* AppDelegate.m in Sources */,
 				21A4544E1920C54000B8F491 /* main.m in Sources */,
 			);
@@ -470,6 +496,7 @@
 				21A454751920C54000B8F491 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		21A454761920C54000B8F491 /* Build configuration list for PBXNativeTarget "LeafScrollViewTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +505,7 @@
 				21A454781920C54000B8F491 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
