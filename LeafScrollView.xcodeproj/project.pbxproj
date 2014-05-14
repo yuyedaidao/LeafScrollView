@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21A35DBF19233B3E00076FEF /* refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 21A35DBD19233B3E00076FEF /* refresh.png */; };
+		21A35DC019233B3E00076FEF /* refresh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21A35DBE19233B3E00076FEF /* refresh@2x.png */; };
+		21A35DC219233CEB00076FEF /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 21A35DC119233CEB00076FEF /* bg.png */; };
 		21A454421920C54000B8F491 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A454411920C54000B8F491 /* Foundation.framework */; };
 		21A454441920C54000B8F491 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A454431920C54000B8F491 /* CoreGraphics.framework */; };
 		21A454461920C54000B8F491 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A454451920C54000B8F491 /* UIKit.framework */; };
@@ -23,9 +26,6 @@
 		21A4546E1920C54000B8F491 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21A4546C1920C54000B8F491 /* InfoPlist.strings */; };
 		21A454701920C54000B8F491 /* LeafScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A4546F1920C54000B8F491 /* LeafScrollViewTests.m */; };
 		21A4547D1920CC7D00B8F491 /* LeafScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A4547C1920CC7D00B8F491 /* LeafScrollView.m */; };
-		21A454811920D64400B8F491 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21A454801920D64400B8F491 /* bg.jpg */; };
-		21A454841920EA9400B8F491 /* refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 21A454821920EA9400B8F491 /* refresh.png */; };
-		21A454851920EA9400B8F491 /* refresh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21A454831920EA9400B8F491 /* refresh@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21A35DBD19233B3E00076FEF /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh.png; sourceTree = "<group>"; };
+		21A35DBE19233B3E00076FEF /* refresh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "refresh@2x.png"; sourceTree = "<group>"; };
+		21A35DC119233CEB00076FEF /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		21A4543E1920C54000B8F491 /* LeafScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeafScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21A454411920C54000B8F491 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		21A454431920C54000B8F491 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,9 +64,6 @@
 		21A4546F1920C54000B8F491 /* LeafScrollViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeafScrollViewTests.m; sourceTree = "<group>"; };
 		21A4547B1920CC7D00B8F491 /* LeafScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeafScrollView.h; sourceTree = "<group>"; };
 		21A4547C1920CC7D00B8F491 /* LeafScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeafScrollView.m; sourceTree = "<group>"; };
-		21A454801920D64400B8F491 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
-		21A454821920EA9400B8F491 /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh.png; sourceTree = "<group>"; };
-		21A454831920EA9400B8F491 /* refresh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "refresh@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,9 +168,9 @@
 		21A4547A1920CC6600B8F491 /* LeafScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				21A454821920EA9400B8F491 /* refresh.png */,
-				21A454831920EA9400B8F491 /* refresh@2x.png */,
-				21A454801920D64400B8F491 /* bg.jpg */,
+				21A35DC119233CEB00076FEF /* bg.png */,
+				21A35DBD19233B3E00076FEF /* refresh.png */,
+				21A35DBE19233B3E00076FEF /* refresh@2x.png */,
 				21A4547B1920CC7D00B8F491 /* LeafScrollView.h */,
 				21A4547C1920CC7D00B8F491 /* LeafScrollView.m */,
 			);
@@ -254,12 +254,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				21A454581920C54000B8F491 /* Main_iPad.storyboard in Resources */,
-				21A454851920EA9400B8F491 /* refresh@2x.png in Resources */,
 				21A4545D1920C54000B8F491 /* Images.xcassets in Resources */,
-				21A454841920EA9400B8F491 /* refresh.png in Resources */,
 				21A454551920C54000B8F491 /* Main_iPhone.storyboard in Resources */,
-				21A454811920D64400B8F491 /* bg.jpg in Resources */,
 				21A4544C1920C54000B8F491 /* InfoPlist.strings in Resources */,
+				21A35DC219233CEB00076FEF /* bg.png in Resources */,
+				21A35DC019233B3E00076FEF /* refresh@2x.png in Resources */,
+				21A35DBF19233B3E00076FEF /* refresh.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
