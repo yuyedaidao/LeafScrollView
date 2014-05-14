@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #define TOP_SCROLL_SPACE 120.0f
-
+#define TIME_KEEP 1.5f
 
 @class LeafScrollView;
 typedef void (^BeginUpdatingBlock)(LeafScrollView *);
@@ -16,6 +16,7 @@ typedef void (^BeginUpdatingBlock)(LeafScrollView *);
 @interface LeafScrollView : UIView<UIScrollViewDelegate>{
     CGFloat angle;
     BOOL stopRotating;
+    NSTimeInterval startInterval;
 }
 @property (nonatomic,assign,readonly) BOOL isLoading;
 @property (strong, nonatomic)  UIScrollView *scrollView;

@@ -106,9 +106,16 @@
     if(self.beginUpdatingBlock){
         self.beginUpdatingBlock(self);
     }
+    startInterval = [[NSDate date] timeIntervalSince1970];
+
 }
 -(void)endUpdating{
-    stopRotating = YES;
+    NSTimeInterval sub = [[NSDate date] timeIntervalSince1970]-startInterval;
+    if(sub<TIME_KEEP){//制造一个等待效果，试用于网速超级快的情况
+        [self performSelector:@selector(endUpdating) withObject:nil afterDelay:sub];
+    }else{
+        stopRotating = YES;
+    }
 }
 -(void)rotateRefreshImage{
     CGAffineTransform endAngle = CGAffineTransformMakeRotation(angle * (M_PI / 180.0f));
