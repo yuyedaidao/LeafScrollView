@@ -57,19 +57,20 @@
     }
     if(!_isLoading){
         if(scrollView.dragging){
-            if(point.y+TOP_FLAG_HIDE>=0){
+            if(self.refreshImgView.center.y<=TOP_FLAG_HIDE){
                 self.refreshImgView.center = CGPointMake(self.refreshImgView.center.x,(-TOP_FLAG_HIDE)*(1+rate*RATE*7)+20);//纯属凑数，哈哈，你可以换个策略哦
             }
             self.refreshImgView.transform = CGAffineTransformMakeRotation(rate*30);
         }else{
             //判断位置
-            if(point.y<SWITCH_Y){//触发刷新状态
+            if(self.refreshImgView.center.y>TOP_FLAG_HIDE){//触发刷新状态
                 [self startRotate];
             }else{
                 self.refreshImgView.center = CGPointMake(self.refreshImgView.center.x,(-TOP_FLAG_HIDE)*(1+rate*RATE*7)+20);
             }
         }
     }
+
 }
 
 
@@ -112,7 +113,7 @@
 -(void)endUpdating{
     NSTimeInterval sub = [[NSDate date] timeIntervalSince1970]-startInterval;
     if(sub<TIME_KEEP){//制造一个等待效果，试用于网速超级快的情况
-        [self performSelector:@selector(endUpdating) withObject:nil afterDelay:sub];
+        [self performSelector:@selector(endUpdating) withObject:nil afterDelay:TIME_KEEP-sub];
     }else{
         stopRotating = YES;
     }

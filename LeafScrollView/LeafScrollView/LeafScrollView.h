@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #define TOP_SCROLL_SPACE 120.0f
-#define TIME_KEEP 1.5f
+#define TIME_KEEP 1.0f
 
 @class LeafScrollView;
 typedef void (^BeginUpdatingBlock)(LeafScrollView *);
