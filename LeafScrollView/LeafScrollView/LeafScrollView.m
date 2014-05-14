@@ -23,7 +23,7 @@
 
         
         _bgImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, -TOP_BG_HIDE, self.bounds.size.width, self.bounds.size.height-TOP_BG_HIDE)];
-        self.bgImageView.image = [UIImage imageNamed:@"bg.jpg"];
+        self.bgImageView.image = [UIImage imageNamed:@"bg"];
         [self addSubview:self.bgImageView];
         _scrollView = [[UIScrollView alloc] initWithFrame:self.bounds];
         [self addSubview:self.scrollView];
