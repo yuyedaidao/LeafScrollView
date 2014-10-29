@@ -24,8 +24,8 @@
         [self performSelector:@selector(endUpdating:) withObject:view afterDelay:2];
     };
     
+    //自定义顶部视图，设置好长宽即可
     UIView *topInfoView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 50)];
-    topInfoView.center = CGPointMake(leaf.center.x, 120);
     topInfoView.backgroundColor = [UIColor orangeColor];
     
     leaf.topInfoView = topInfoView;
