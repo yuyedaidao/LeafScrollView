@@ -141,7 +141,10 @@
     if(topInfoView!=_topInfoView){
         _topInfoView = topInfoView;
         [self.scrollView addSubview:topInfoView];
-        self.spaceTopContent = CGRectGetMinY(self.containerView.frame)-self.topInfoView.center.y;
+        CGRect frame = topInfoView.frame;
+        topInfoView.frame = CGRectMake(0, self.containerView.frame.origin.y-frame.size.height, frame.size.width, frame.size.height);
+        topInfoView.center = CGPointMake(self.center.x, topInfoView.center.y);
+//        self.spaceTopContent = CGRectGetMinY(self.containerView.frame)-self.topInfoView.center.y;
     }
 }
 

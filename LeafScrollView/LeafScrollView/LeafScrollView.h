@@ -27,8 +27,8 @@ typedef void (^BeginUpdatingBlock)(LeafScrollView *);
 
 @property (strong,nonatomic) UIView *topInfoView;
 
-//顶部视图中心距内容视图上边的距离
-@property (nonatomic,assign) CGFloat spaceTopContent;
+////顶部视图中心距内容视图上边的距离
+//@property (nonatomic,assign) CGFloat spaceTopContent;
 /**
  *  内容视图大小，可根据此摆放你的内容视图
  */
