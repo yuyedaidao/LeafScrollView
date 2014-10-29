@@ -137,5 +137,12 @@
         }
     }];
 }
+-(void)setTopInfoView:(UIView *)topInfoView{
+    if(topInfoView!=_topInfoView){
+        _topInfoView = topInfoView;
+        [self.scrollView addSubview:topInfoView];
+        self.spaceTopContent = CGRectGetMinY(self.containerView.frame)-self.topInfoView.center.y;
+    }
+}
 
 @end

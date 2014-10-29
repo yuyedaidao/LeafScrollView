@@ -24,6 +24,12 @@
         [self performSelector:@selector(endUpdating:) withObject:view afterDelay:2];
     };
     
+    UIView *topInfoView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 50)];
+    topInfoView.center = CGPointMake(leaf.center.x, 120);
+    topInfoView.backgroundColor = [UIColor orangeColor];
+    
+    leaf.topInfoView = topInfoView;
+    
 }
 -(void)endUpdating:(LeafScrollView *)view{
     [view endUpdating];

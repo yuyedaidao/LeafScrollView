@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0F565AE4-699E-4C2E-9E5F-0FDFE1C0F767</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LeafScrollView</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E909AD15A6368FAF82BCA437CAC94182C71D191C</key>
+		<string>https://github.com/yuyedaidao/LeafScrollView.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LeafScrollView.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E909AD15A6368FAF82BCA437CAC94182C71D191C</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/yuyedaidao/LeafScrollView.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E909AD15A6368FAF82BCA437CAC94182C71D191C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E909AD15A6368FAF82BCA437CAC94182C71D191C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LeafScrollView</string>
+		</dict>
+	</array>
+</dict>
+</plist>
