@@ -20,34 +20,37 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-
-        
-        _bgImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, -TOP_BG_HIDE, self.bounds.size.width, self.bounds.size.height-TOP_BG_HIDE)];
-        self.bgImageView.image = [UIImage imageNamed:@"bg"];
-        [self addSubview:self.bgImageView];
-        _scrollView = [[UIScrollView alloc] initWithFrame:self.bounds];
-        [self addSubview:self.scrollView];
-        self.scrollView.backgroundColor = [UIColor clearColor];
-        self.scrollView.delegate  = self;
-        self.scrollView.scrollsToTop = NO;
-        
-        _containerView = [[UIView alloc] initWithFrame:CGRectMake(0, TOP_SCROLL_SPACE, self.bounds.size.width, self.bounds.size.height-TOP_SCROLL_SPACE)];
-        [self.scrollView addSubview:_containerView];
-        self.containerView.backgroundColor = [UIColor whiteColor];
-        
-        //刷新标志
-        _refreshImgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 25, 25)];
-        self.refreshImgView.center = ORIGINAL_POINT;
-        self.refreshImgView.image = [UIImage imageNamed:@"refresh"];
-        [self addSubview:self.refreshImgView];
-        
-        self.contentRect = self.containerView.bounds;
-        
-        [self prepare];
+        [self awakeFromNib];
     }
     return self;
 }
 
+-(void)awakeFromNib{
+
+    _bgImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, -TOP_BG_HIDE, self.bounds.size.width, self.bounds.size.height-TOP_BG_HIDE)];
+    self.bgImageView.image = [UIImage imageNamed:@"bg"];
+    [self addSubview:self.bgImageView];
+    _scrollView = [[UIScrollView alloc] initWithFrame:self.bounds];
+    [self addSubview:self.scrollView];
+    self.scrollView.backgroundColor = [UIColor clearColor];
+    self.scrollView.delegate  = self;
+    self.scrollView.scrollsToTop = NO;
+    
+    _containerView = [[UIView alloc] initWithFrame:CGRectMake(0, TOP_SCROLL_SPACE, self.bounds.size.width, self.bounds.size.height-TOP_SCROLL_SPACE)];
+    [self.scrollView addSubview:_containerView];
+    self.containerView.backgroundColor = [UIColor whiteColor];
+    
+    //刷新标志
+    _refreshImgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 25, 25)];
+    self.refreshImgView.center = ORIGINAL_POINT;
+    self.refreshImgView.image = [UIImage imageNamed:@"refresh"];
+    [self addSubview:self.refreshImgView];
+    
+    self.contentRect = self.containerView.bounds;
+    
+    [self prepare];
+
+}
 #pragma scroll
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
     CGPoint point = scrollView.contentOffset;
